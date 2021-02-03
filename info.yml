@@ -1,0 +1,20 @@
+project:
+  name: 'Golden Flow Showcase Project'
+  owner: 'governify'
+  teamId: '123'
+  identities:
+    pivotal:
+      url: 'https://www.pivotaltracker.com/n/projects/2487566'
+    heroku:
+      url: 'https://dashboard.heroku.com/apps/goldenflow-showcase-project'
+    travis:
+      url: 'https://travis-ci.org/github/governifyauditor/goldenflow-showcase-project'
+    codecov:
+      url: 'https://codeclimate.com/github/governifyauditor/goldenflow-showcase-project'
+  members:
+    member1:
+      name: 'Governify'
+      surname: 'Auditor' 
+      githubUsername: 'governifyauditor'
+      pivotalUsername: 'governifyauditor'
+      herokuEmail: 'governify.auditor@gmail.com'

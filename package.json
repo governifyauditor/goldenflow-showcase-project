@@ -1,0 +1,29 @@
+{
+  "name": "test",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "mocha ./tests/test.js",
+    "coverage": "nyc mocha ./tests/test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nyc": "^15.0.1",
+    "mocha": "^7.1.2"
+  },
+  "nyc": {
+    "exclude": [
+      "node_modules",
+      "tests/**.js"
+    ],
+    "reporter": [
+      "json",
+      "html",
+      "text",
+      "lcovonly"
+    ]
+  }
+}
