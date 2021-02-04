@@ -43,9 +43,10 @@ First, you need to set up your different development tools:
 
 ## Check results
 After doing all of this, if the data has been calculated there should appear a new point for each metric:
+- At least 75% of releases must match the merge of a PR into master within ten minutes: 2/2 = 100%
+- At least 75% of Travis builds should pass correctly: This depends on whether your pipeline was successful or not. If everything passed correctly you should see 100%
 - Correlation between new branches and started stories for the whole class: 3/4 = 75%
 - Correlation between open pull request and finished stories for the whole class: 2/4 = 50%
 - Correlation between merged pull requests and delivered stories for the whole class: 1/4 = 25%
-- At least 75% of releases must match the merge of a PR into master within ten minutes: 2/2 = 100%
 
-The last metric (Heroku releases) might have a different value if the PR were merged in a short period of time.
+The last metric (Heroku releases) might have a different value if you didn't wait until a PR was deployed before merging a new one.
