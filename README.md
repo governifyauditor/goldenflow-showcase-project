@@ -1,7 +1,6 @@
 # Goldenflow Showcase Project
-Golden flow guide to simulate it
+Guide to simulate the golden flow and obtain metrics out of it using Governify ecosystem.
 
-## Golden Flow
 ![Golden Flow Diagram](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/goldenflow.PNG?raw=true)
 
 This figure shows the Golden Flow, a workflow for projects in which different teams contribute individually to a large code repository. The upstream repository is forked and each planned feature is developed by a member of the team in a separate branch. Once a feature is completed, a pull request (PR) is opened for the whole team to discuss
@@ -38,7 +37,7 @@ First, you need to set up your different development tools:
 4. Finish 4 stories on PT.
 
 ### Merge PR - Deliver story
-5. Merge 2 PR (1 having the id on the name, 1 not having). Please, check Heroku or wait 5 minutes between each merge to ensure it is deployed in time.
+5. Merge 2 PR (1 having the id on the name, 1 not having). Please, check Heroku or wait 5 minutes between each merge to ensure it is deployed before adding new changes.
 6. Deliver 4 stories.
 
 
