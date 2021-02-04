@@ -1,13 +1,19 @@
-# goldenflow-showcase-project
+# Goldenflow Showcase Project
 Golden flow guide to simulate it
+
+## Golden Flow
+![Golden Flow Diagram](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/goldenflow.PNG?raw=true)
+
+This figure shows the Golden Flow, a workflow for projects in which different teams contribute individually to a large code repository. The upstream repository is forked and each planned feature is developed by a member of the team in a separate branch. Once a feature is completed, a pull request (PR) is opened for the whole team to discuss
+the changes, and if accepted, merge the changes to the forked repository's main branch. Once merged, the main branch is deployed to the staging server for the client to validate new functionality. If the client signs off on the feature, another PR is opened to merge the changes into the main repository so the feature can be included in the production server. 
 
 ## Bear in mind
 The Governify auditor should be present on your private tools (Ex. Heroku) in order to have access to your information.
 
 ## Create projects and tools
+If you already have your tools setup you can skip this part.
 
-If you already have your tools setup you can skip this part
-
+First, you need to set up your different development tools:
  - Create Github repo
  - Create Pivotal projects
  - Add GitHub repo to Travis-CI
@@ -16,7 +22,6 @@ If you already have your tools setup you can skip this part
 
 
 ## Prerequisites
-
  - Having the info.yml correctly created on your root folder of the repo
  - Configure automatic deploys on Heroku
  - Configure your CI to work (.travis.yml)
@@ -33,8 +38,8 @@ If you already have your tools setup you can skip this part
 4. Finish 4 stories on PT.
 
 ### Merge PR - Deliver story
-5. Merge 2 PR (1 having the id on the name, 1 not having).
-6. Deliver 4 stories
+5. Merge 2 PR (1 having the id on the name, 1 not having). Please, check Heroku or wait 5 minutes between each merge to ensure it is deployed in time.
+6. Deliver 4 stories.
 
 
 ## Check results
