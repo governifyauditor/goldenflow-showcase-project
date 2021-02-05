@@ -64,12 +64,12 @@ Bear in mind that you might need to wait for the Governify auditor to accept the
 Follow this steps:
 1. Access to [https://join.bluejay.governify.io/](https://join.bluejay.governify.io/). This is the view for joining into the system and start the tools audition.
 
-![Github branch name](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/join1.PNG?raw=true)
+![Join 1](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/join1.PNG?raw=true)
 
 2. Enter your Repository URL. For example, `https://github.com/governifyauditor/goldenflow-showcase-project` would be the URL of this Repository.
 3. Click on Check. Once checked, any errors concerning your info.yml file will appear. Correct them if you have any. If no errors are found, you'll get a success message and a new section will appear.
 
-![Github branch name](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/join2.PNG?raw=true)
+![Join 2](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/join2.PNG?raw=true)
 
 4. In the following input enter a valid course code. Click on Register. If everything is ok, you will see a success and a badge will appear aswell as a markdown for adding it to your repo's README.md file. By clicking on the badge you will access to the dashboard. If you've already registered into the system you should see a message telling you so but the dashboard badge will be given so you can access the dashboard in case you lost it.
 
