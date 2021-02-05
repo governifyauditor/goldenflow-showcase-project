@@ -54,7 +54,7 @@ Bear in mind that you might need to wait for the Governify auditor to accept the
 ![Github branch name](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/golden2.PNG?raw=true)
 
 ### Open PR - Finish story
-4. Modify 4 of the branches. 
+4. Modify all the new branches adding some changes to them. 
 5. Open 2 PR of the branches with the Pivotal Tracker story ID on the branch name.
 6. Create another PR using the branch that doesn't have the Pivotal Tracker story ID on it.
 7. Finish the 4 stories on Pivotal Tracker by clicking on the `Finish` button.
@@ -77,6 +77,8 @@ Follow this steps:
 ![Join 2](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/join2.PNG?raw=true)
 
 4. In the input enter a valid course code. Click on Register. If everything is ok, you will see a success and a badge will appear aswell as a markdown for adding it to your repo's README.md file. By clicking on the badge you will access to the dashboard. If you've already registered into the system you should see a message telling you so but the dashboard badge will be given so you can access the dashboard in case you lost it.
+
+![Join 3](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/join3.PNG?raw=true)
 
 The points should appear in 5 minutes or less. If you have any problem when accomplishing this section, you can contact [governify.auditor@gmail.com](mailto:governify.auditor@gmail.com) for troubleshooting.
 
