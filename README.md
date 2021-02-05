@@ -41,8 +41,9 @@ Bear in mind that you might need to wait for the Governify auditor to accept the
 ## Simulate golden flow
 
 ### New branch - Started stories correlation
-1. Create 4 stories on PT (Pivotal Tracker) and start them.
-2. Create 4 branches on GH (GitHub) from `main` branch. On 3 of them, write a PT story ID from the ones created on step 1. On the remaining one, write a name for the branch without having an id on it.
+1. Create 4 stories on Pivotal Tracker by pressing the button `Add Story` on the top part of the column and click on the `Start` button on each to start them.
+2. We are going to create 4 branches on GitHub from `main` branch. First, create one with a name of your choice.
+3. Then, create 3 but this time including  in the name of the branch an ID of the four Pivotal Tracker stories created on step 1 (Check image below to see its location and the second image showing a branch name example based on the Pivotal Tracker Story ID).
 
 `Pivotal Tracker ID location:`
 
@@ -53,12 +54,16 @@ Bear in mind that you might need to wait for the Governify auditor to accept the
 ![Github branch name](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/golden2.PNG?raw=true)
 
 ### Open PR - Finish story
-3. Modify 4 of the branches. Open 3 PR (2 of the branches with the PT story ID on the name, and 1 using the branch that doesn't have the PT story ID on it).
-4. Finish the 4 stories on PT.
+4. Modify 4 of the branches. 
+5. Open 2 PR of the branches with the Pivotal Tracker story ID on the branch name.
+6. Create another PR using the branch that doesn't have the Pivotal Tracker story ID on it.
+7. Finish the 4 stories on Pivotal Tracker by clicking on the `Finish` button.
 
 ### Merge PR - Deliver story
-5. Merge 2 PR (1 having the PT story id on the name, 1 not having it). Please, check Heroku or wait 5 minutes between each merge to ensure it is deployed before adding new changes so it deploys twice.
-6. Deliver the 4 stories.
+8. First, merge one PR having the Pivotal Tracker story ID on the branch name. 
+9. Now, please check Heroku or wait 5 minutes to ensure it is deployed beforethe next step.
+10. After the first PR is deployed, merge the another PR but this time the one that its name does not contain the Pivotal Tracker story ID.
+11. Deliver the 4 stories by clicking on the `Deliver button`.
 
 ## Join in Bluejay's system
 Follow this steps:
