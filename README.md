@@ -39,6 +39,11 @@ The Governify auditor should be present on the private tools in order to have ac
 Bear in mind that you might need to wait for the Governify auditor to accept the invitations in order for the points to appear in the dashboard.
 
 ## Simulate golden flow
+Make sure that your repository files look something like this before continuing:
+
+![Files](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/repoReady.PNG?raw=true)
+
+Now you can go ahead an simulate the Golden Flow.
 
 ### New branch - Started stories correlation
 1. Create 4 stories on Pivotal Tracker by pressing the button `Add Story` on the top part of the column and click on the `Start` button on each to start them.

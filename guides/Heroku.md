@@ -8,6 +8,37 @@ Once logged in, you will need to click `New` on the right side of the screen and
 
 Choose a name for your app and a region and click on `Create app`. 
 
+## Add Procfile and index.js
+We will create a basic node.js app just to make Heroku detect the code and "deploy" it.
+
+### package.json
+First we have to create a file named `package.json` containing the following:
+```
+{
+  "name": "testing-goldenflow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  }
+}
+```
+This will indicate to heroku that the project is a node.js project.
+
+### index.js
+Add a file named `index.js` to the root of your repository containing the following:
+```
+console.log("This is a project for emulating Golden Flow")
+```
+It is only a console print but it will be enought for this case. 
+
+### Procfile
+Add a file named `Procfile` to the root of your repository containing the following
+```
+web: node index.js
+```
+It orders Heroku to run node index.js when deploying. 
+
 ## Configure Heroku automatic deploys
 Once your app is created, you'll need to setup automatic deploys. First you have to go to the `Deploy` tab at the top and look for the `Deployment method` section. Then, click on the `Connect to GitHub` button to connect Heroku with GitHub.
 ![Heroku](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/heroku2.PNG?raw=true)
