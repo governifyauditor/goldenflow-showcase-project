@@ -28,7 +28,7 @@ This will indicate to heroku that the project is a node.js project.
 ### index.js
 Add a file named `index.js` to the root of your repository containing the following:
 ```
-console.log("This is a project for emulating Golden Flow")
+console.log("This is a project for simulating the Golden Flow")
 ```
 It is only a console print but it will be enought for this case. 
 
