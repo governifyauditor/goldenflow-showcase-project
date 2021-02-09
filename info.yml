@@ -9,7 +9,7 @@ project:
       url: 'https://goldenflow-showcase-project.herokuapp.com/'
     travis:
       url: 'https://travis-ci.org/github/governifyauditor/goldenflow-showcase-project'
-    codecov:
+    codeclimate:
       url: 'https://codeclimate.com/github/governifyauditor/goldenflow-showcase-project'
   members:
     member1:
