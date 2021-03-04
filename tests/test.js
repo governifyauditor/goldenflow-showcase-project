@@ -1,5 +1,6 @@
 var assert = require('assert');
 
+
 var index = require('../index')
 
 describe('Array', function() {
