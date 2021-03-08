@@ -96,3 +96,4 @@ After doing all of this, if the data has been calculated there should appear a n
 - Correlation between merged pull requests and delivered stories for the whole class: 1/4 = 25%
 
 The `Heroku releases` metric might have a different value if you didn't wait until a PR was deployed before merging a new one.
+
