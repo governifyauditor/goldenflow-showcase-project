@@ -2,6 +2,9 @@ project:
   name: 'Golden Flow Showcase Project'
   owner: 'governify'
   teamId: '123'
+  notifications:
+    slack:
+      url: 'https://hooks.slack.com/services/AAAAAA/BBBBBBB/CCCCCC'
   identities:
     pivotal:
       url: 'https://www.pivotaltracker.com/n/projects/2487566'
