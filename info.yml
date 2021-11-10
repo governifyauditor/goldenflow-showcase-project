@@ -2,9 +2,6 @@ project:
   name: 'Golden Flow Showcase Project'
   owner: 'governify'
   teamId: '123'
-  notifications:
-    slack:
-      url: 'https://hooks.slack.com/services/AAAAAA/BBBBBBB/CCCCCC'
   identities:
     pivotal:
       url: 'https://www.pivotaltracker.com/n/projects/2487566'
@@ -12,8 +9,6 @@ project:
       url: 'https://goldenflow-showcase-project.herokuapp.com/'
     travis:
       url: 'https://travis-ci.org/github/governifyauditor/goldenflow-showcase-project'
-    codeclimate:
-      url: 'https://codeclimate.com/github/governifyauditor/goldenflow-showcase-project'
   members:
     member1:
       name: 'Governify'
@@ -22,8 +17,8 @@ project:
       pivotalUsername: 'governifyauditor'
       herokuEmail: 'governify.auditor@gmail.com'
     member2:
-      name: 'Cesar'
-      surname: 'GP' 
-      githubUsername: 'cesgarpas'
-      pivotalUsername: 'cesgarpas'
-      herokuEmail: 'cesgarpas@cesgarpas.com'
+      name: 'Borja'
+      surname: 'Rondán' 
+      githubUsername: 'borjar20'
+      pivotalUsername: 'borjar20'
+      herokuEmail: 'borjar20@gmail.com'
