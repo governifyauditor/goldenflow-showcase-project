@@ -1,4 +1,10 @@
 # Goldenflow Showcase Project
+## Github / Pivotal / Heroku Stack
+---
+> Warning. Due to bugs in the Travis api we have made this simplified stack excluding the parts belonging to it.
+> Here you can see the other available stacks:
+> - [Github/Travis/Heroku/Pivotal Stack](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/guides/Stack%20GitHub-Travis-Pivotal-Heroku.md)
+
 Guide to simulate the golden flow and obtain metrics out of it using Governify ecosystem.
 
 ![Golden Flow Diagram](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/goldenflow.PNG?raw=true)
@@ -14,7 +20,6 @@ If you already have your tools setup you can skip this part.
 First, you need to set up your different development tools:
  - Create Github Repository
  - Create Pivotal Project
- - Add GitHub Repository to Travis-CI and configure a simple workflow ([Guide](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/guides/Travis.md))
  - Create Heroku App and enable automatic deploys ([Guide](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/guides/Heroku.md))
 
 ### Bluejay
@@ -33,8 +38,6 @@ The Governify auditor should be present on the private tools in order to have ac
  - Heroku: You'll need to add the auditor as a collaborator. On your app dashboard view, click on `Access` at the top and then `Add collaborator`. Enter governify.auditor@gmail.com and save changes.
 
 ![H invite](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/auditor3.PNG?raw=true)
-
- - Travis: You don't need to add the auditor if the repository is public. If it isn't, having the auditor on your GitHub repo is required.
 
 Bear in mind that you might need to wait for the Governify auditor to accept the invitations in order for the points to appear in the dashboard.
 
@@ -90,7 +93,6 @@ The points should appear in 5 minutes or less. If you have any problem when acco
 ## Check results
 After doing all of this, if the data has been calculated there should appear a new point for each metric:
 - At least 75% of releases must match the merge of a PR into master within ten minutes: 2/2 = 100%
-- At least 75% of Travis builds should pass correctly: This depends on whether your pipeline was successful or not. If everything passed correctly you should see 100%
 - Correlation between new branches and started stories for the whole class: 3/4 = 75%
 - Correlation between open pull request and finished stories for the whole class: 2/4 = 50%
 - Correlation between merged pull requests and delivered stories for the whole class: 1/4 = 25%
