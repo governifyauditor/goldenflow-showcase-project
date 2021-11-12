@@ -1,4 +1,6 @@
 # Goldenflow Showcase Project
+## GitHub/Travis/Pivotal/Heroku Stack
+---
 Guide to simulate the golden flow and obtain metrics out of it using Governify ecosystem.
 
 ![Golden Flow Diagram](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/goldenflow.PNG?raw=true)
