@@ -7,8 +7,6 @@ project:
       url: 'https://www.pivotaltracker.com/n/projects/2487566'
     heroku:
       url: 'https://goldenflow-showcase-project.herokuapp.com/'
-    travis:
-      url: 'https://travis-ci.org/github/governifyauditor/goldenflow-showcase-project'
   members:
     member1:
       name: 'Governify'
