@@ -4,6 +4,7 @@
 > Warning. Due to bugs in the Travis api we have made this simplified stack excluding the parts belonging to it.
 > Here you can see the other available stacks:
 > - [Github/Travis/Heroku/Pivotal Stack](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/guides/Stack%20GitHub-Travis-Pivotal-Heroku.md)
+> - [GitLab/Heroku/Pivotal Stack](https://gitlab.com/governify_auditor/goldenflow-showcase-project/-/blob/main/README.md)
 
 Guide to simulate the golden flow and obtain metrics out of it using Governify ecosystem.
 
