@@ -3,10 +3,8 @@ project:
   owner: 'governify'
   teamId: '123'
   identities:
-    pivotal:
-      url: 'https://www.pivotaltracker.com/n/projects/2487566'
-    heroku:
-      url: 'https://goldenflow-showcase-project.herokuapp.com/'
+    pivotal: 'https://www.pivotaltracker.com/n/projects/2487566'
+    heroku: 'https://goldenflow-showcase-project.herokuapp.com/'
   members:
     member1:
       name: 'Governify'
