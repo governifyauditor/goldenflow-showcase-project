@@ -3,10 +3,8 @@ project:
   owner: 'governify'
   teamId: '123'
   identities:
-    pivotal:
-      url: 'https://www.pivotaltracker.com/n/projects/2487566'
-    heroku:
-      url: 'https://goldenflow-showcase-project.herokuapp.com/'
+    pivotal: 'https://www.pivotaltracker.com/n/projects/2487566'
+    heroku: 'https://goldenflow-showcase-project.herokuapp.com/'
   members:
     member1:
       name: 'Governify'
@@ -14,9 +12,3 @@ project:
       githubUsername: 'governifyauditor'
       pivotalUsername: 'governifyauditor'
       herokuEmail: 'governify.auditor@gmail.com'
-    member2:
-      name: 'Borja'
-      surname: 'Rondán' 
-      githubUsername: 'borjar20'
-      pivotalUsername: 'borjar20'
-      herokuEmail: 'borjar20@gmail.com'
