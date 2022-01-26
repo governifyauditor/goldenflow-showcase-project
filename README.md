@@ -1,9 +1,7 @@
 # Goldenflow Showcase Project
 ## Github / Pivotal / Heroku Stack
 ---
-> Warning. Due to bugs in the Travis api we have made this simplified stack excluding the parts belonging to it.
 > Here you can see the other available stacks:
-> - [Github/Travis/Heroku/Pivotal Stack](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/guides/Stack%20GitHub-Travis-Pivotal-Heroku.md)
 > - [GitLab/Heroku/Pivotal Stack](https://gitlab.com/governify_auditor/goldenflow-showcase-project/-/blob/main/README.md)
 
 Guide to simulate the golden flow and obtain metrics out of it using Governify ecosystem.
@@ -12,6 +10,12 @@ Guide to simulate the golden flow and obtain metrics out of it using Governify e
 
 This figure shows the Golden Flow, a workflow for projects in which different teams contribute individually to a large code repository. The upstream repository is forked and each planned feature is developed by a member of the team in a separate branch. Once a feature is completed, a pull request (PR) is opened for the whole team to discuss
 the changes, and if accepted, merge the changes to the forked repository's main branch. Once merged, the main branch is deployed to the staging server for the client to validate new functionality. If the client signs off on the feature, another PR is opened to merge the changes into the main repository so the feature can be included in the production server. 
+
+As a summary, the metrics we are going to analyze are:
+- Each time a story is started in Pivotal Tracker, its corresponding branch in GitHub must be created.
+- Each time a story is finalized in Pivotal Tracker, a corresponding Pull Request of the brach must be created.
+- Each time a story is delivered in Pivotal Tracker, its corresponding Pull Request must be merged.
+- Each time a change is merged it must be released in heroku
 
 ## Prerequisites
 
@@ -24,7 +28,7 @@ First, you need to set up your different development tools:
  - Create Heroku App and enable automatic deploys ([Guide](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/guides/Heroku.md))
 
 ### Bluejay
- - Create info.yml file. You can use this [template](https://github.com/governify/audited-project-template/blob/main/info.yml) and also take a look at this [example](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/info.yml) showing what it should look like. This file will be used by Bluejay to know the different identities of your tools to evaluate and determine the different indicators.
+ - Create info.yml file. For more details on how to set up your info.yml with the Wizard tool, you can go to this section below [Join in Bluejay's system](#join-in-bluejays-system).
 
 ### Governify auditor project invite
 The Governify auditor should be present on the private tools in order to have access to your information:
@@ -75,6 +79,28 @@ Now you can go ahead an simulate the Golden Flow.
 11. Deliver the 4 stories by clicking on the `Deliver button`.
 
 ## Join in Bluejay's system
+### Join Info.yml Wizard
+The info.yml file is very important to be able to register our project in Bluejay, that's why we have to take special care to configure it correctly. For this purpose, a tool has been created with which we can generate them automatically to avoid possible errors. You can find it here [https://join.bluejay.governify.io/wizard](https://join.bluejay.governify.io/wizard)
+
+![Wizard 1](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/wizard1.PNG?raw=true)
+
+When we enter, we will see an example with the basic structure that our file should have. There is a first part where we can enter some basic information to identify our project such as Name, Owner and TeamID fields. Then we will have the 3 sections where we will define the rest of the information of the project, these sections are:
+
+- Identities: In this section we will add the links to the Pivotal Tracker and Heroku projects that we have previously configured for our project.
+
+- Notifications: Although not mandatory, this section is very important in order to receive feedback from the application and to know at all times the status of the project with respect to the practices analyzed. To do this we will add the url of our Slack hook (Warning, since this could be used by anyone with access to our repo, it is advisable to use the encryption system that the tool provides us to preserve privacy).
+![Wizard 2](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/wizard2.PNG?raw=true)
+
+- Members: Finally, in this section we will register the participating members of the project together with the user names used in the different management tools.
+
+Once we have entered all our data we can download the file ready for our project by clicking on the button and we will be ready to upload it to our repo and proceed to join the project to Bluejay.
+
+Another option if we already have a repository with an info.yml already created, would be to load it directly with the Load button and entering the url of our Github repository.
+
+![Wizard 3](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/wizard3.PNG?raw=true)
+
+
+### Joining to your course
 Follow this steps:
 1. Access to [https://join.bluejay.governify.io/](https://join.bluejay.governify.io/). This is the view for joining into the system and start the tools audition.
 
@@ -89,7 +115,7 @@ Follow this steps:
 
 ![Join 3](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/join3.PNG?raw=true)
 
-The points should appear in 5 minutes or less. If you have any problem when accomplishing this section, you can contact [governify.auditor@gmail.com](mailto:governify.auditor@gmail.com) for troubleshooting.
+The points should appear in 5 minutes or less. If you have any problem when accomplishing this section, you can contact us in our [Gitter](https://gitter.im/governify/community) for troubleshooting.
 
 ## Check results
 After doing all of this, if the data has been calculated there should appear a new point for each metric:
