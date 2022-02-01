@@ -6,7 +6,7 @@
 
 Guide to simulate the golden flow and obtain metrics out of it using Governify ecosystem.
 
-![Golden Flow Diagram](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/golden-flow.PNG?raw=true)
+![Golden Flow Diagram](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/Goldenflow.PNG?raw=true)
 
 This figure shows the Golden Flow, a workflow for projects in which different teams contribute individually to a large code repository. The upstream repository is forked and each planned feature is developed by a member of the team in a separate branch. Once a feature is completed, a pull request (PR) is opened for the whole team to discuss
 the changes, and if accepted, merge the changes to the forked repository's main branch. Once merged, the main branch is deployed to the staging server for the client to validate new functionality. If the client signs off on the feature, another PR is opened to merge the changes into the main repository so the feature can be included in the production server. 
@@ -15,6 +15,7 @@ As a summary, the metrics we are going to analyze are:
 - Each time a story is started in Pivotal Tracker, its corresponding branch in GitHub must be created.
 - Each time a story is finalized in Pivotal Tracker, a corresponding Pull Request of the brach must be created.
 - Each time a story is delivered in Pivotal Tracker, its corresponding Pull Request must be merged.
+- When merge the brach the CI execution must be successfully
 - Each time a change is merged it must be released in heroku
 
 ## Prerequisites
@@ -26,6 +27,7 @@ First, you need to set up your different development tools:
  - Create Github Repository
  - Create Pivotal Project
  - Create Heroku App and enable automatic deploys ([Guide](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/guides/Heroku.md))
+ - Create an action workflow to automate the continuous integration of your project. Here you can see a ([Hello World CI](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/.github/workflows/test.yml))
 
 ### Bluejay
  - Create info.yml file. For more details on how to set up your info.yml with the Wizard tool, you can go to this section below [Join in Bluejay's system](#join-in-bluejays-system).
@@ -72,11 +74,16 @@ Now you can go ahead an simulate the Golden Flow.
 6. Create another PR using the branch that doesn't have the Pivotal Tracker story ID on it.
 7. Finish the 4 stories on Pivotal Tracker by clicking on the `Finish` button.
 
+At this point, if we have configured the example CI, we can go to the actions tab of our repository and we will see how it has been executed 1 time for each PR
+![actions](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/actions.PNG?raw=true)
+
 ### Merge PR - Deliver story
 8. First, merge one PR having the Pivotal Tracker story ID on the branch name. 
 9. Now, please check Heroku or wait 5 minutes to ensure it is deployed beforethe next step.
 10. After the first PR is deployed, merge the another PR but this time the one that its name does not contain the Pivotal Tracker story ID.
 11. Deliver the 4 stories by clicking on the `Deliver button`.
+
+Again, once the changes in each PR have been merged, the CI will be executed again.
 
 ## Join in Bluejay's system
 ### Join Info.yml Wizard
@@ -99,6 +106,11 @@ Another option if we already have a repository with an info.yml already created,
 
 ![Wizard 3](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/wizard3.PNG?raw=true)
 
+If you have already created your info yml with an encrypted field but you don't know if you have entered it correctly or if there has been an error, you can use the [checker](https://join.bluejay.governify.io/checker) tool to check it quickly.
+
+![Wizard 4](https://github.com/governifyauditor/goldenflow-showcase-project/blob/main/img/Checker.PNG?raw=true)
+
+Just enter the actual value and the encryption you have and the tool will tell you if it is the right match.
 
 ### Joining to your course
 Follow this steps:
@@ -120,9 +132,10 @@ The points should appear in 5 minutes or less. If you have any problem when acco
 ## Check results
 After doing all of this, if the data has been calculated there should appear a new point for each metric:
 - At least 75% of releases must match the merge of a PR into master within ten minutes: 2/2 = 100%
-- Correlation between new branches and started stories for the whole class: 3/4 = 75%
-- Correlation between open pull request and finished stories for the whole class: 2/4 = 50%
-- Correlation between merged pull requests and delivered stories for the whole class: 1/4 = 25%
+- At least 75% of Github Actions builds should pass correctly: 4/4 = 100%
+- Correlation between new branches and started stories for the team: 3/4 = 75%
+- Correlation between open pull request and finished stories for the team: 2/4 = 50%
+- Correlation between merged pull requests and delivered stories for the team: 1/4 = 25%
 
 The `Heroku releases` metric might have a different value if you didn't wait until a PR was deployed before merging a new one.
 
