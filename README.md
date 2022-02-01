@@ -15,7 +15,7 @@ As a summary, the metrics we are going to analyze are:
 - Each time a story is started in Pivotal Tracker, its corresponding branch in GitHub must be created.
 - Each time a story is finalized in Pivotal Tracker, a corresponding Pull Request of the brach must be created.
 - Each time a story is delivered in Pivotal Tracker, its corresponding Pull Request must be merged.
-- When merge the brach the CI execution must be successfully
+- When merge the brach the CI execution must be successful
 - Each time a change is merged it must be released in heroku
 
 ## Prerequisites
